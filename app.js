@@ -55,7 +55,7 @@ const signIn = () => {
   firebase.auth().signInWithEmailAndPassword(email, password)
       .then((result) => {
           // Signed in 
-          document.write("You are Signed In")
+          window.location.href = "main.html";
           console.log(result)
       })
       .catch((error) => {

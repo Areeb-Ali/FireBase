@@ -1,0 +1,76 @@
+/* Basics UI */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#airdrop-list {
+    margin-top: 20px;
+}
+
+.airdrop-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.airdrop-name {
+    font-weight: bold;
+}
+
+.airdrop-timer {
+    font-size: 18px;
+}
+
+.complete-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Making Responsive */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#airdrop-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.airdrop-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px; /* Adjust width as needed */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .airdrop-item {
+        width: 100%;
+    }
+}
