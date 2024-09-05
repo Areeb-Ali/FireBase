@@ -28,14 +28,14 @@ const auth = firebaseApp.auth();
 
 // Sign up function
 const signUp = () => {
-  const email = document.querySelector(".email").value;
-  const password = document.querySelector(".password").value;
+  const email = document.querySelector("#signup-email").value;
+  const password = document.querySelector("#signup-password").value;
   console.log(email, password)
   // firebase code
   firebase.auth().createUserWithEmailAndPassword(email, password)
       .then((result) => {
-          // Signed in 
-          document.write("You are Signed Up")
+          // // Signed in 
+          window.location.href = 'index.html';
           console.log(result)
           // ...
       })
@@ -49,8 +49,8 @@ const signUp = () => {
 
 // Sign In function
 const signIn = () => {
-  const email = document.querySelector(".email").value;
-  const password = document.querySelector(".password").value;
+  const email = document.querySelector("#sigin-email").value;
+  const password = document.querySelector("#sigin-password").value;
   // firebase code
   firebase.auth().signInWithEmailAndPassword(email, password)
       .then((result) => {
